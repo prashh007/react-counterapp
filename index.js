@@ -25,10 +25,11 @@ class App extends Component {
   }
 
   render() {
+    
     let {counters} = this.state;
     return (
       <div>
-        {counters.map( counter => <Counter key={counter.id} value={counter.value} onIncrement={this.handleIncrement} onDecrement={this.handleDecrement}/>) } 
+        {counters.map( c => <Counter key={c.id} value={c.value} onIncrement={this.handleIncrement} onDecrement={this.handleDecrement}/>) } 
       </div>
     );
   }

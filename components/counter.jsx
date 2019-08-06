@@ -1,6 +1,6 @@
 import React,{Component} from "react";
 
-export default class Counter extends Component{
+class Counter extends Component{
   render(){
     let {value, onIncrement, onDecrement} = this.props;
     
@@ -22,3 +22,4 @@ export default class Counter extends Component{
     
   }
 }
+export default Counter;
